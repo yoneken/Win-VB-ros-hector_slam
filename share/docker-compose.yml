@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  hector_slam_example:
+    build: .
+    image: hector_slam_example:latest
+    command: roslaunch hector_slam_example hector_hokuyo_eth.launch
+    network_mode: "host"
+    volumes:
+      - .ros:/root/.ros
+    environment:
+      DISPLAY: $DISPLAY

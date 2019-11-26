@@ -1,0 +1,4 @@
+.vagrant
+.ros
+.vscode
+*.log
