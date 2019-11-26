@@ -25,7 +25,7 @@ Using rviz, you have to use -nowgl (Disable native OpenGL) option.
 ### Run
 
 ```
-> cd *Win-vagrant-Ubuntu-webcam dir*
+> cd *Win-VB-ros-hector_slam dir*
 > vagrant up
 > vagrant reload # only the first time
 > vagrant ssh
