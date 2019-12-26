@@ -89,6 +89,7 @@ Vagrant.configure("2") do |config|
     sudo timedatectl set-timezone Asia/Tokyo
     sudo sed -i 's@archive.ubuntu.com@ftp.jaist.ac.jp/pub/Linux@g' /etc/apt/sources.list
     sudo apt update
+    sudo echo grub-pc hold | dpkg --set-selections
     sudo apt -y upgrade
     sudo usermod -aG dialout vagrant
     curl -L https://github.com/docker/compose/releases/download/1.24.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
